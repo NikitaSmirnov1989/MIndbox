@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+}
+.app{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    text-align: center;
+    background: rgb(232, 232, 232);
+}
+.app_title{
+    text-align: center;
+    color: rgb(166, 25, 25);
+}
+.app_add_todo{
+    width: 80%;
+    margin: 0px auto;
+}
+.status_todos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border: 1px solid black;
+    border-top: none;
+    padding: 50px 10px;
+}
+.status_todos_statuses{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.status_todo{
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+.app_todo_input{
+    height: 36px;
+    width: 100%;
+    border: 0px;
+    padding: 5px;
+}
+.app_todo_input::placeholder{
+    background: url("../Images/arrow.svg") 0% 50% no-repeat;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0.5;
+    color: rgb(73, 73, 73);
+    opacity: 0.2;
+    padding: 0px 20px;
+}
+.app_todo_input:focus::placeholder {
+    color: transparent;
+    background: none
+}
+.app_todo_input:focus::-webkit-input-placeholder { color:transparent; background: none}
+.app_todo_input:focus:-moz-placeholder { color:transparent; background: none} /* FF 4-18 */
+.app_todo_input:focus::-moz-placeholder { color:transparent; background: none} /* FF 19+ */
+.app_todo_input:focus:-ms-input-placeholder { color:transparent; background: none} /* IE 10+ */
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url("../Images/default.svg");
+  }
+  input[type="checkbox"]:hover{
+    background: url("../Images/default_hover.svg");
+  }
+  input[type="checkbox"]:checked {
+    background: url("../Images/checked.svg");
+  }
+  input[type="checkbox"]:checked:hover {
+    background: url("../Images/checked_hover.svg");
+  }

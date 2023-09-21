@@ -1,0 +1,27 @@
+.list{
+    width: 100%;
+}
+.list-todo{
+    list-style: none;
+    text-align: left;
+    background: white;
+}
+.todo-item{
+    border: 1px solid black;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+.todo-item:not(:first-child) {
+    border-top: none;
+}
+
+.todo-item label{
+    display: inline-block;
+    margin-left: 10px;
+}
+.list-todo-no{
+    border: 1px solid black;
+    background: rgb(232, 232, 232);
+    text-align: center;
+}
